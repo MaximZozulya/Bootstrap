@@ -25,14 +25,19 @@ h4 {
   margin-bottom: 20px;
 }
 
+
 /*=============================================== header ===================================================*/
 
 .main-header {
   background: url(../img/main1.jpg) center no-repeat;
   background-size: cover;
   height: 100vh;
-  min-height: 600px;
+  min-height: 700px;
   position: relative;
+}
+
+.main-header .navbar-toggler {
+  color: #ffffff;
 }
 
 .main-header .navbar-brand,
@@ -105,4 +110,61 @@ h4 {
 
 .btn-violet {
   background-color: #783493;
+}
+
+/*===================================================== media queries ======================================================== */
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 991px){
+  .main-header-text {
+    background-color: rgba(0, 0, 0, .3);
+  }
+  .navbar-nav {
+    background: linear-gradient(45deg,  #d6182c 0%,#2a1d54 100%);
+    position: relative;
+    z-index: 1;
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .main-header-text {
+    left: 0;
+    margin: 0 20px;
+    max-width: 100%;
+  }
+  h3, h4 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .main-header-text {
+    top:90px;
+  }
+  .main-header-buttons .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .main-header-buttons .btn:last-child{
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 480px){
+
+}
+
+@media screen and (max-width: 380px){
+  .main-header .navbar-brand {
+    font-size: 30px;
+    margin-left: 40px;
+  }
+  .main-header .navbar-brand img {
+    margin-right: 10px;
+  }
 }
