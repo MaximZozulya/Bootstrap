@@ -112,7 +112,59 @@ h4 {
   background-color: #783493;
 }
 
-/*===================================================== media queries ======================================================== */
+/*=============================================== section-watch ===================================================*/
+
+.section-watch {
+  background: url(../img/world_map.png) center no-repeat;
+  background-size: cover;
+}
+
+.section-watch h3,
+.section-watch h4 {
+  color: #484848;
+}
+
+.section-watch h3 {
+  font-size: 33px;
+}
+
+.section-watch h4 {
+  font-size: 40px;
+}
+
+.section-watch .nav-pills {
+  margin-bottom: 20px;
+}
+
+.section-watch .nav-pills .nav-link {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 14px 30px;
+  color: #484848;
+  background-color: transparent;
+}
+
+.section-watch .nav-pills .nav-item .nav-link.active {
+  background-color: #f42267;
+  color: #ffffff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, .35);
+}
+
+.btn-shadow {
+  margin-top: 15px;
+  box-shadow: 0 10px 0 #ff5990;
+  border-radius: 10px;
+  padding: 10px 25px;
+  transition: all .5;
+}
+.btn-shadow:hover {
+  box-shadow: 0 5px 0 #ff5990;
+  background-color: #f42267;
+  color: #ffffff;
+}
+
+/*=============================================== media queries ================================================= */
 
 @media screen and (max-width: 1200px) {
 
