@@ -165,6 +165,37 @@ h4 {
   color: #ffffff;
 }
 
+/*=============================================== section-progress  ===================================================*/
+
+.section-progress {
+  background-color: #4b2d7f;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 0;
+}
+
+.section-progress .num {
+  font-size: 50px;
+  font-weight: 600;
+  margin: 30px 0 20px;
+}
+
+.section-progress h4 {
+  font-size: 30px;
+  height: 72px;
+  overflow: hidden;
+}
+
+.section-progress .progress-item {
+  padding: 80px 0;
+  transition: all .5s;
+}
+
+.section-progress .progress-item:hover {
+  background-color: #40286a;
+}
+
+
 /*=============================================== media queries ================================================= */
 
 @media screen and (max-width: 1200px) {
@@ -194,6 +225,9 @@ h4 {
   }
   h3, h4 {
     font-size: 30px;
+  }
+  .section-progress .progress-item {
+    padding: 40px 0;
   }
 }
 
