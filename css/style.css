@@ -1,3 +1,9 @@
+@font-face {
+  src: url("../font/palatinolinotype_italic.ttf");
+  font-weight: 400;
+  font-family: 'palatinolinotype';
+}
+
 body {
   font-family: 'Montserrat', serif;
   min-width: 320px;
@@ -16,7 +22,7 @@ section {
 h3 {
   font-style: italic;
   font-size: 35px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'palatinolinotype', sans-serif;
 }
 
 h4 {
@@ -191,11 +197,6 @@ h4 {
   transition: all .5s;
 }
 
-.progress-text {
-  max-width: 366px;
-  text-align: center;
-}
-
 .section-progress .progress-item:hover {
   background-color: #40286a;
 }
@@ -207,6 +208,30 @@ h4 {
   background-size: cover;
   color: #ffffff;
 }
+
+/*=============================================== section-disign  ===================================================*/
+
+.section-disign h3,
+.section-disign h4 {
+  color: #484848;
+}
+
+.section-disign h3 {
+  font-size: 33px;
+}
+
+.section-disign h2 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #484848;
+  margin: 10px 0;
+}
+
+.section-disign p {
+  font-style: 14px;
+}
+
+
 
 
 /*=============================================== media queries ================================================= */
@@ -253,6 +278,9 @@ h4 {
     width: 100%;
     margin-bottom: 15px;
   }
+  .main-header-buttons {
+    padding-left: 0;
+  }
   .main-header-buttons .btn:last-child{
     margin-top: 0;
   }
@@ -274,6 +302,12 @@ h4 {
   }
   .btn-shadow {
     width: 50%;
+  }
+  .section-progress .progress-item p {
+    max-width: 400px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
