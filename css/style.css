@@ -191,6 +191,11 @@ h4 {
   transition: all .5s;
 }
 
+.progress-text {
+  max-width: 366px;
+  text-align: center;
+}
+
 .section-progress .progress-item:hover {
   background-color: #40286a;
 }
