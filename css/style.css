@@ -158,6 +158,7 @@ h4 {
   padding: 10px 25px;
   transition: all .5;
 }
+
 .btn-shadow:hover {
   box-shadow: 0 5px 0 #ff5990;
   background-color: #f42267;
@@ -179,6 +180,9 @@ h4 {
     position: relative;
     z-index: 1;
     padding: 0 15px;
+  }
+  section {
+    padding: 50px 0;
   }
 }
 
@@ -205,10 +209,26 @@ h4 {
   .main-header-buttons .btn:last-child{
     margin-top: 0;
   }
+  .btn-shadow {
+    margin-top: 15px;
+    box-shadow: 0 5px 0 #ff5990;
+    border-radius: 10px;
+    padding: 10px 15px;
+    transition: all .5;
+  }
 }
 
 @media screen and (max-width: 480px){
-
+  .section-watch .nav-pills .nav-link {
+    padding: 8px 16px;
+  }
+  .section-watch .nav-pills .nav-item {
+    width: 100%;
+  }
+  .btn-shadow {
+    width: 50%;
+    margin-left:25% ;
+  }
 }
 
 @media screen and (max-width: 380px){
