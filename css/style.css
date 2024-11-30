@@ -260,6 +260,41 @@ h4 {
   box-shadow: 0 14px 30px -15px rgba(0, 0, 0, .75);
 }
 
+/*=============================================== section reviews ===================================================*/
+
+.section-reviews {
+  background: url(../img/reviews_bg.jpg) center no-repeat;
+  background-size: cover;
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+
+.section-reviews .carousel-caption {
+  top: 5%;
+  bottom: auto;
+  text-align: left;
+}
+
+.section-reviews .blockquote {
+  position: relative;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 22px;
+  padding-left: 40px;
+  margin-top: 70px;
+}
+
+.section-reviews .blockquote::before {
+  content: '\201C';
+  position: absolute;
+  top: -80px;
+  left: -33px;
+  float: left;
+  font-size: 150px;
+  font-weight: 500;
+  font-style: italic;
+  color: #f42267;
+}
 
 /*=============================================== media queries ================================================= */
 
@@ -280,6 +315,20 @@ h4 {
   section {
     padding: 50px 0;
   }
+  .section-reviews h3,
+  .section-reviews h4 {
+    font-size: 25px;
+  }
+  .section-reviews .blockquote {
+    font-size: 17px;
+    padding-left: 20px;
+    margin-top: 40px;
+  }
+  .section-reviews .blockquote::before {
+    font-size: 100px;
+    top: -40px;
+  }
+ 
 }
 
 @media screen and (max-width: 768px){
@@ -296,7 +345,12 @@ h4 {
   }
   .offset-2 {
     margin-left:0;
-}
+  }
+  .section-reviews .carousel-caption {
+    position: static;
+    width: 70%;
+    margin: auto;
+  }
 }
 
 @media screen and (max-width: 600px){
