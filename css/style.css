@@ -92,6 +92,7 @@ h4 {
   font-weight: 600;
   color: #ffffff;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .main-header-buttons .btn {
@@ -214,6 +215,11 @@ h4 {
 .section-disign h3,
 .section-disign h4 {
   color: #484848;
+}
+
+.disign-img {
+  width: 76px;
+  height: 71px;
 }
 
 .section-disign h3 {
