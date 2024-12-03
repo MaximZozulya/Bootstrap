@@ -9,11 +9,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+      .preloader  {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9999;
+        background-color: #000000;
+      }
+    </style>
+
     <link rel="stylesheet" href="css/baguetteBox.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>BlueRex</title>
   </head>
   <body>
+    <!-- preloader -->
+     <div class="preloader d-flex align-items-center justify-content-center">
+      <div class="spinner-border text-danger" style="width: 10rem; height: 10rem;" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+     </div>
     <!-- button top -->
     <button class="scrollToTop">&#8593;</button>
 
